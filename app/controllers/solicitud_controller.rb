@@ -6,6 +6,5 @@ class SolicitudController < ApplicationController
     def get_solicitudes
       @solicitudes = Solicitud.all
       render json: @solicitudes
-      end
     end
   end
