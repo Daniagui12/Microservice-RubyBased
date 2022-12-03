@@ -1,4 +1,4 @@
-class SolicitudsController < ApplicationController
+class SolicitudController < ApplicationController
     def say
         @message = Cow.new.say(params[:message])
       end
