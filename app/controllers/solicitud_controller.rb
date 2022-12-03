@@ -5,8 +5,7 @@ class SolicitudController < ApplicationController
 
     def get_solicitudes
       @solicitudes = Solicitud.all
-      respond_to do |format|
-        format.json { render :json => @solicitudes }
+      render json: @solicitudes
       end
     end
   end
