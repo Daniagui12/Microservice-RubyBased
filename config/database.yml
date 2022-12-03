@@ -10,6 +10,7 @@ default: &default
   port: 5432
   user: sprint_user
   password: sprint2
+  pool: 1000 
 
 development:
   <<: *default

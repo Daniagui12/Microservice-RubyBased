@@ -29,6 +29,7 @@ gem "jbuilder"
 
 gem "pg" # Postgres
 
+gem 'jsonapi-resources'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
