@@ -1,3 +1,3 @@
-class SolicitudeResource < JSONAPI::Resource
+class SolicitudResource < JSONAPI::Resource
     attributes :id_solicitud, :fechaCreacion, :estado, :id_cliente_id, :documentoCliente
 end
