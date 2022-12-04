@@ -9,11 +9,9 @@ class SolicitudController < ApplicationController
       end
 
       def get_solicitud_by_empresa_empleado
-        @Empleados = Empleado.where(empresaAfiliada_id: params[:empresa_id])
-        puts(@Empleados)
+        Empleados = Empleado.where(empresaAfiliada_id: params[:empresa_id])
         listIds = []
-        @Empleados.each do |empleado|
-            puts(empleado.id)
+        Empleados.each do |empleado|
             listIds.push(empleado.id)
         end
         @solicitudes = Solicitud.where(id_cliente_id: listIds)
