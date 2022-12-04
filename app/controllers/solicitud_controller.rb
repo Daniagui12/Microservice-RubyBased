@@ -16,6 +16,6 @@ class SolicitudController < ApplicationController
         end
         puts listIds
         @solicitudes = Solicitud.where(id_cliente_id: listIds)
-        render json: @solicitud
+        render json: @solicitudes
       end
 end
