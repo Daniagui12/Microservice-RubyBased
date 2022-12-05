@@ -1,5 +1,4 @@
-require mongoid
 class EmpresaAfiliada < ActiveRecord::Base
-    include mongoid::document
+    include Mongoid::document
     store_in collection: "empresaAfiliada"
 end

@@ -1,5 +1,4 @@
-require mongoid
 class Solicitud < ActiveRecord::Base
-    include mongoid::document
+    include Mongoid::document
     store_in collection: "solicitud"
 end
