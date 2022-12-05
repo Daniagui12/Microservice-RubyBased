@@ -1,4 +1,4 @@
 class Empleado < ActiveRecord::Base
-    include Mongoid::document
+    include Mongoid::Document
     store_in collection: "empleado"
 end
