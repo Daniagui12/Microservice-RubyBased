@@ -9,7 +9,7 @@ class SolicitudController < ApplicationController
       end
 
       def get_solicitud_by_empresa_empleado
-        @Empleados = Empleado.find_by(empresaAfiliada_id: params[:empresa_id])
+        @Empleados = Empleado.where(empresaAfiliada_id: params[:empresa_id])
         listIds = []
         @Empleados.each do |empleado|
             listIds.push(empleado.id)
