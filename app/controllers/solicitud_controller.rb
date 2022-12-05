@@ -12,11 +12,9 @@ class SolicitudController < ApplicationController
         @Empleados = Empleado.where(empresaAfiliada_id: params[:empresa_id])
         listIds = []
         @Empleados.each do |empleado|
-            puts empleado.id
             listIds.push(empleado.id)
         end
-        puts listIds
-        @solicitudes = Solicitud.where(id_cliente_id: listIds)
+        @solicitudes = Solicitud.in(id_cliente_id: listIds)
         render json: @solicitudes
       end
 end
