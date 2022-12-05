@@ -1,4 +1,4 @@
 class EmpresaAfiliada < ActiveRecord::Base
-    self.table_name = 'empresaAfiliada_empresaafiliada'
-    self.primary_key = 'NIT'
+    include mongoid::document
+    store_in collection: "empresaAfiliada"
 end

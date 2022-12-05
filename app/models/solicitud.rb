@@ -1,4 +1,4 @@
 class Solicitud < ActiveRecord::Base
-    self.table_name = 'solicitud_solicitud'
-    self.primary_key = 'id_solicitud'
+    include mongoid::document
+    store_in collection: "solicitud"
 end
