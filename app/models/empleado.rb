@@ -2,7 +2,7 @@ class Empleado
     include Mongoid::Document
     store_in collection: "empleado"
     field :nombre, type: String
-    field :id , type: Integer
+    field :idCliente , type: Integer
     field :_id , type: Integer
     field :empresaAfiliada_id, type: Integer
     field :sueldo , type: Integer
